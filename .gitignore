@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Node
+node_modules/
+*.log
+.pnpm-store/
+
+# Env / secrets
+.env
+.env.local
+.env.*.local
+
+# Generated output
+output/
+*.mp4
+!assets/bgm/*.mp4
+!assets/bgm/*.mp3
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Remotion
+remotion/out/

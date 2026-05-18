@@ -1,0 +1,29 @@
+# Sample brief — the input shape every UGC ad generation starts from.
+# Copy this to briefs/<your_product>.yaml and edit.
+
+product:
+  name: My Product
+  one_liner: One-line value-prop describing what your product does
+  link: example.com/product
+
+audience:
+  who: Describe the audience in 1-2 lines — role, vertical, scale
+  pain: |
+    What's the actual pain this audience feels every day? Be specific —
+    "spending money on keywords that don't convert" beats "wants ROI".
+  unaware_of: |
+    What's the audience NOT seeing yet? Often the strongest hook is the
+    blind spot that, once named, makes them go "oh shit, that's me."
+
+# Hook angles to A/B test. The variants engine spins one ad per hook.
+# Keep each ≤ 12 words. The script writer expands each into a full
+# 15-30s ad body that shares the same product + cta but leads from
+# this specific opener.
+hook_angles:
+  - "I almost killed a profitable campaign because of one bad signal."
+  - "There's a 5-minute audit that tells you what's bleeding money."
+  - "Stop guessing which half of your spend is the profitable half."
+
+cta:
+  text: "Try the free audit at example.com"
+  link: example.com/audit

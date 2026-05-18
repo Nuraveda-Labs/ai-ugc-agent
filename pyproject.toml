@@ -1,0 +1,73 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ai-ugc-agent"
+version = "0.1.0"
+description = "Production-grade AI UGC video ads — script → avatar → b-roll → ad-platform upload"
+authors = [{name = "ai-ugc-agent contributors", email = ""}]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+  # HTTP + retries
+  "httpx>=0.28",
+  "tenacity>=9.0",
+
+  # LLM routing (smart vs cheap, OpenAI / Anthropic / Gemini)
+  "litellm>=1.83",
+
+  # Config + secrets
+  "pydantic>=2.13",
+  "pydantic-settings>=2.14",
+  "python-dotenv>=1.2",
+
+  # Logging
+  "structlog>=24.4",
+
+  # Media
+  "ffmpeg-python>=0.2",
+
+  # CLI
+  "typer>=0.15",
+
+  # Brief format
+  "pyyaml>=6.0",
+
+  # HyperFrames composition templating (github.com/heygen-com/hyperframes)
+  "jinja2>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "pytest-asyncio>=0.24",
+  "ruff>=0.7",
+]
+
+[project.scripts]
+ugc = "ugc.pipeline:main"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ugc"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "N", "UP", "S", "C4"]
+ignore = ["E501", "S101"]  # line-length in tests; assert in tests
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S"]
+"src/ugc/briefs/*" = ["S"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
