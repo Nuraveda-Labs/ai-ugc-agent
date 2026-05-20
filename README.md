@@ -80,4 +80,4 @@ In production they're orchestrated by **[Mesh Pilot](https://meshpilot.app)** â€
 
 ---
 
-Built by [Glitch Executor Labs](https://glitchexecutor.com).
+Built by [Mesh Pilot](https://meshpilot.app).
