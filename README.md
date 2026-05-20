@@ -12,7 +12,7 @@ Takes a structured brief (`product`, `audience`, `hook_angles`) and produces a f
 ## Quick start
 
 ```bash
-git clone https://gitlab.com/glitch-grow/ai-ugc-agent.git
+git clone https://gitlab.com/mesh-pilot/ai-ugc-agent.git
 # or: git clone https://codeberg.org/Glitch_Exec_Lab/ai-ugc-agent.git
 cd ai-ugc-agent
 
@@ -37,7 +37,7 @@ ugc render briefs/my_product.yaml
 
 ## The HITL pattern (shared across the stack)
 
-Generated variants don't auto-publish. They're produced as draft assets that the [ads agent](https://gitlab.com/glitch-grow/ai-ads-agent) (or any downstream uploader) queues through its approval gate. In the [Mesh Pilot](https://meshpilot.app) cockpit, those drafts show up in the same web inbox where every cross-agent proposal lands.
+Generated variants don't auto-publish. They're produced as draft assets that the [ads agent](https://gitlab.com/mesh-pilot/ai-ads-agent) (or any downstream uploader) queues through its approval gate. In the [Mesh Pilot](https://meshpilot.app) cockpit, those drafts show up in the same web inbox where every cross-agent proposal lands.
 
 ## Why open source
 
@@ -60,18 +60,18 @@ package.json    # Remotion / Node deps (pnpm install)
 
 | Agent | Domain | Repo |
 |---|---|---|
-| AI Ads Agent | Meta / Google / TikTok / Amazon Ads | [glitch-grow/ai-ads-agent](https://gitlab.com/glitch-grow/ai-ads-agent) |
-| AI Sales Agent | Outbound B2B sales | [glitch-grow/ai-sales-agent](https://gitlab.com/glitch-grow/ai-sales-agent) |
-| AI Social Agent | Multi-platform posting + ORM | [glitch-grow/ai-social-agent](https://gitlab.com/glitch-grow/ai-social-agent) |
+| AI Ads Agent | Meta / Google / TikTok / Amazon Ads | [mesh-pilot/ai-ads-agent](https://gitlab.com/mesh-pilot/ai-ads-agent) |
+| AI Sales Agent | Outbound B2B sales | [mesh-pilot/ai-sales-agent](https://gitlab.com/mesh-pilot/ai-sales-agent) |
+| AI Social Agent | Multi-platform posting + ORM | [mesh-pilot/ai-social-agent](https://gitlab.com/mesh-pilot/ai-social-agent) |
 | **AI UGC Agent** | This repo | — |
-| AI Voice Agent | LiveKit-based phone agent | [glitch-grow/ai-voice-agent](https://gitlab.com/glitch-grow/ai-voice-agent) |
-| AI SEO Agent | Shopify SEO autopilot | [glitch-grow/ai-seo-agent](https://gitlab.com/glitch-grow/ai-seo-agent) |
+| AI Voice Agent | LiveKit-based phone agent | [mesh-pilot/ai-voice-agent](https://gitlab.com/mesh-pilot/ai-voice-agent) |
+| AI SEO Agent | Shopify SEO autopilot | [mesh-pilot/ai-seo-agent](https://gitlab.com/mesh-pilot/ai-seo-agent) |
 
 In production they're orchestrated by **[Mesh Pilot](https://meshpilot.app)** — the closed-source cockpit that runs all six in concert with shared brand context, a single web approval inbox, and cross-agent handoffs.
 
 ## Mirrors
 
-- GitLab: [`glitch-grow/ai-ugc-agent`](https://gitlab.com/glitch-grow/ai-ugc-agent)
+- GitLab: [`mesh-pilot/ai-ugc-agent`](https://gitlab.com/mesh-pilot/ai-ugc-agent)
 - Codeberg: [`Glitch_Exec_Lab/ai-ugc-agent`](https://codeberg.org/Glitch_Exec_Lab/ai-ugc-agent)
 
 ## License
