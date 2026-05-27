@@ -2,7 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-black.svg)](LICENSE)
 [![Part of Mesh Pilot](https://img.shields.io/badge/Mesh%20Pilot-stack-black.svg)](https://meshpilot.app)
-[![Mirrored on Codeberg](https://img.shields.io/badge/codeberg-mirror-black.svg)](https://codeberg.org/Glitch_Exec_Lab/ai-ugc-agent)
+[![Open on GitHub](https://img.shields.io/badge/github-Nuraveda--Labs-black.svg)](https://github.com/Nuraveda-Labs/ai-ugc-agent)
+[![Mirrored on Codeberg](https://img.shields.io/badge/codeberg-mirror-black.svg)](https://codeberg.org/Nuraveda_lab/ai-ugc-agent)
 
 > **Part of the [Mesh Pilot](https://meshpilot.app) open-source 6-agent marketing stack.**
 > Short-form vertical (9:16) AI UGC video ad pipeline — built for cost-per-acquisition, not organic views.
@@ -12,8 +13,8 @@ Takes a structured brief (`product`, `audience`, `hook_angles`) and produces a f
 ## Quick start
 
 ```bash
-git clone https://gitlab.com/mesh-pilot/ai-ugc-agent.git
-# or: git clone https://codeberg.org/Glitch_Exec_Lab/ai-ugc-agent.git
+git clone https://gitlab.com/nuraveda-lab/ai-ugc-agent.git
+# or: git clone https://codeberg.org/Nuraveda_lab/ai-ugc-agent.git
 cd ai-ugc-agent
 
 uv pip install -e .          # or: pip install -e .
@@ -37,7 +38,7 @@ ugc render briefs/my_product.yaml
 
 ## The HITL pattern (shared across the stack)
 
-Generated variants don't auto-publish. They're produced as draft assets that the [ads agent](https://gitlab.com/mesh-pilot/ai-ads-agent) (or any downstream uploader) queues through its approval gate. In the [Mesh Pilot](https://meshpilot.app) cockpit, those drafts show up in the same web inbox where every cross-agent proposal lands.
+Generated variants don't auto-publish. They're produced as draft assets that the [ads agent](https://gitlab.com/nuraveda-lab/ai-ads-agent) (or any downstream uploader) queues through its approval gate. In the [Mesh Pilot](https://meshpilot.app) cockpit, those drafts show up in the same web inbox where every cross-agent proposal lands.
 
 ## Why open source
 
@@ -60,19 +61,19 @@ package.json    # Remotion / Node deps (pnpm install)
 
 | Agent | Domain | Repo |
 |---|---|---|
-| AI Ads Agent | Meta / Google / TikTok / Amazon Ads | [mesh-pilot/ai-ads-agent](https://gitlab.com/mesh-pilot/ai-ads-agent) |
-| AI Sales Agent | Outbound B2B sales | [mesh-pilot/ai-sales-agent](https://gitlab.com/mesh-pilot/ai-sales-agent) |
-| AI Social Agent | Multi-platform posting + ORM | [mesh-pilot/ai-social-agent](https://gitlab.com/mesh-pilot/ai-social-agent) |
+| AI Ads Agent | Meta / Google / TikTok / Amazon Ads | [mesh-pilot/ai-ads-agent](https://gitlab.com/nuraveda-lab/ai-ads-agent) |
+| AI Sales Agent | Outbound B2B sales | [mesh-pilot/ai-sales-agent](https://gitlab.com/nuraveda-lab/ai-sales-agent) |
+| AI Social Agent | Multi-platform posting + ORM | [mesh-pilot/ai-social-agent](https://gitlab.com/nuraveda-lab/ai-social-agent) |
 | **AI UGC Agent** | This repo | — |
-| AI Voice Agent | LiveKit-based phone agent | [mesh-pilot/ai-voice-agent](https://gitlab.com/mesh-pilot/ai-voice-agent) |
-| AI SEO Agent | Shopify SEO autopilot | [mesh-pilot/ai-seo-agent](https://gitlab.com/mesh-pilot/ai-seo-agent) |
+| AI Voice Agent | LiveKit-based phone agent | [mesh-pilot/ai-voice-agent](https://gitlab.com/nuraveda-lab/ai-voice-agent) |
+| AI SEO Agent | Shopify SEO autopilot | [mesh-pilot/ai-seo-agent](https://gitlab.com/nuraveda-lab/ai-seo-agent) |
 
 In production they're orchestrated by **[Mesh Pilot](https://meshpilot.app)** — the closed-source cockpit that runs all six in concert with shared brand context, a single web approval inbox, and cross-agent handoffs.
 
 ## Mirrors
 
-- GitLab: [`mesh-pilot/ai-ugc-agent`](https://gitlab.com/mesh-pilot/ai-ugc-agent)
-- Codeberg: [`Glitch_Exec_Lab/ai-ugc-agent`](https://codeberg.org/Glitch_Exec_Lab/ai-ugc-agent)
+- GitLab: [`mesh-pilot/ai-ugc-agent`](https://gitlab.com/nuraveda-lab/ai-ugc-agent)
+- Codeberg: [`Glitch_Exec_Lab/ai-ugc-agent`](https://codeberg.org/Nuraveda_lab/ai-ugc-agent)
 
 ## Contributing
 
